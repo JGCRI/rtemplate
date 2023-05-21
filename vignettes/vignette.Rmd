@@ -1,0 +1,70 @@
+---
+title: "User Guide"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{User Guide}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+resourse_files:
+  - vignettes/vignetteFigs
+---
+
+<!-------------------------->
+
+<!-------------------------->
+
+<!-- HTML styles items    -->
+
+<!-------------------------->
+
+<!-------------------------->
+
+```{=html}
+<style>
+.button {
+  background-color: #555555;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #555555;
+  color: gold;
+}
+
+</style>
+```
+<!-------------------------->
+
+<!-------------------------->
+
+# Introduction
+
+<!-------------------------->
+
+<!-------------------------->
+
+<p align="center">
+
+<img src="vignetteFigs/divider.png"/>
+
+</p>
+
+Osiris is an R package that is used to process climate impacts on agricultural yields for the Global Change Analysis Model (GCAM). This package is a modular data pipeline that consists of four steps that take gridded crop yield data from existing emulators and transforms them into agricultural yield impacts for GCAM commodities. The four functions are run in series as follows, with a detailed workflow below:
+
+-   calculate_deltas_from_climate(): obtain precipitation and temperature data for each crop and irrigation type, as well as the difference relative to baseline average
+-   grid_to_basin_yield(): use global gridded crop model emulator output to generate crop yield and aggregate to GCAM basins
+-   yield_to_gcam_basin(): convert agricultural yield data to multipliers for each GCAM commodity-irrigation-basin
+-   create_AgProdChange_xml(): apply multipliers to AgProdChange from GCAM reference and obtain a new file in xml format
+
+<p align="center" style="font-size:18px;">
+
