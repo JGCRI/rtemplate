@@ -1,4 +1,4 @@
 library(testthat)
-library(osiris)
+library(rtemplate)
 
-test_check("osiris")
+test_check("rtemplate")
