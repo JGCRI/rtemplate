@@ -110,11 +110,11 @@
 </h1></div>
 <p><code>rtemplate</code> is a template for creating a basic R package with Continuous Integration (CI) via GitHub actions in the following steps:</p>
 <p><br><br></p>
-<p><a href="https://raw.githubusercontent.com/JGCRI/rtemplate/dev/extras/rtemplate_build_your_own_package.png" class="external-link"><img src="extras/rtemplate_build_your_own_package.png" alt="rtemplate_build_your_own_package"></a></p>
+<p><a href="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png" class="external-link"><img src="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png" alt="rtemplate_build_your_own_package"></a></p>
 <p><br><br></p>
 <p>The folder structure is as shown below:</p>
 <p><br><br></p>
-<p><a href="https://raw.githubusercontent.com/JGCRI/rtemplate/dev/extras/rtemplate_package_structure.png" class="external-link"><img src="extras/rtemplate_package_structure.png" alt="rtemplate_package_structure"></a></p>
+<p><a href="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_package_structure.png" class="external-link"><img src="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_package_structure.png" alt="rtemplate_package_structure"></a></p>
 <p><br><br></p>
 </div>
 <div class="section level1">
@@ -130,9 +130,8 @@
 <p>Update your information (package name and other details) in the following files:</p>
 <ul>
 <li>README.md</li>
-<li>setup.py</li>
+<li>DESCRIPTION</li>
 <li>LICENSE</li>
-<li>rtemplate (Rename this folder to your new package name)</li>
 </ul>
 </div>
 <div class="section level1">
@@ -140,22 +139,17 @@
 </h1>
 <p>This is where you write the main code for your model. We have include some key modules and tests. You should write tests for all your modules as you develop them.</p>
 <ul>
-<li>rtemplate.py (This is your main model class. Update all module names as modules are updated)</li>
-<li>rtemplate_data.py (Update the path to your test data)</li>
-<li>rtemplate_config.py (Used to read a configuration file with model settings)</li>
-<li>rtemplate_data.py (Used to read data files for your model)</li>
-<li>rtemplate.py (This is where you do your main model operations. You can write multiple methods within this file or if you have many methods you can group them into separate files e.g. spatial_downscaling.py, temporal_downscaling.py)</li>
-<li>rtemplate.py (This method starts the logger and is called in model.py. After this is loaded you can log all comments, errors and excution times throughout your code by using the logging module.)</li>
-<li>rtemplate.py (Update this to write your diagnostic scripts that test how various modules are performing.)</li>
-<li>rtemplate_up.py (Update this script to delete unecessary files, clean up memory and close out the model.)</li>
+<li>R.R (This defines your package and provides the help/documentation for the package.)</li>
+<li>R_function.R (This is an example function with documentation. You can copy this to create other functions.)</li>
 </ul>
 </div>
 <div class="section level1">
 <h1 id="id_4-update-tests">4 Update Tests<a class="anchor" aria-label="anchor" href="#id_4-update-tests"></a>
 </h1>
-<p>We provide a sample test file that should be updated as you add in new modules and classes. These tests are linked to the GitHub Action so that everytime you push any changes your tests are executed. The GitHub action also links to codecoverage so that you know how much of your code is covered by the tests you have written. You should aim to keep this percentage to above 70%.</p>
+<p>We provide a sample test file that should be updated as you add in new modules and classes. These tests are linked to the GitHub Action so that every time you push any changes your tests are executed. The GitHub action also links to <code>codecov</code> so that you know how much of your code is covered by the tests you have written. You should aim to keep this percentage to above 70%.</p>
 <ul>
-<li>rtemplate_package.py (Update package and module names. Make sure to update tests as you new modules and classes)</li>
+<li>tests.R (Update package name here)</li>
+<li>tests-rtemplate.R (Write unit and integration tests for each of your functions here.)</li>
 </ul>
 </div>
 <div class="section level1">
@@ -163,18 +157,17 @@
 </h1>
 <p>Update each of the following files to generate clean, clear documentation. When you push your changes to github the github actions described in the next section will automatically build the documentation page online for you. An example for this repo is available at: <a href="https://jgcri.github.io/rtemplate/" class="external-link uri">https://jgcri.github.io/rtemplate/</a>.</p>
 <ul>
-<li>docs.py</li>
-<li>docs.rst</li>
-<li>docs_started.rst</li>
-<li>docs.rst</li>
-<li>docs.rst</li>
-<li>docs.rst</li>
-<li>docs.rst</li>
-<li>docs_guide.rst</li>
+<li>_pkgdown.yml</li>
+<li>CITATION.md</li>
+<li>CONTRIBUTE.md</li>
+<li>DISCLAIMER</li>
+<li>LICENSE</li>
+<li>NEWS.md</li>
+<li>SUPPORT.md</li>
 </ul>
 <p>Once your GitHub action for docs is complete (see section 6 GitHub Actions) you need the following steps to get your documentation page live online:</p>
 <p><br><br></p>
-<p><a href="https://raw.githubusercontent.com/JGCRI/rtemplate/dev/extras/rtemplate_activate_docs.png" class="external-link"><img src="extras/rtemplate_activate_docs.png" alt="rtemplate_package_structure"></a></p>
+<p><a href="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_activate_docs.png" class="external-link"><img src="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_activate_docs.png" alt="rtemplate_package_structure"></a></p>
 <p><br><br></p>
 </div>
 <div class="section level1">
@@ -183,12 +176,11 @@
 <p>The final piece is to check your GitHub actions for continuous integration. These actions have been written so they are trigger everytime you push to main or execute a pull request to main. There are four GitHub actions included with this package as follows:</p>
 <ul>
 <li>.github.yml (Tests if package builds on windows, macos, ubuntu)</li>
-<li>.github.yml (Automatically builds you docs from the docs folder)</li>
-<li>.github-pdf.yml (Automatically builds a JOSS version of a software paper from the paper folder. You can update paper.md file if you plan to publish your model.)</li>
+<li>.github.yml (Automatically builds your documentation from the vignette folder and hosts on GitHub pages)</li>
 <li>.github.yml (Runs your tests and check what percentage is covered on codecov. You will need to connect your repository to codecoverage for this to work as shown below.)</li>
 </ul>
 <p><br><br></p>
-<p><a href="https://raw.githubusercontent.com/JGCRI/rtemplate/dev/extras/rtemplate_codecov.png" class="external-link"><img src="extras/rtemplate_codecov.png" alt="rtemplate_codecov"></a></p>
+<p><a href="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_codecov.png" class="external-link"><img src="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_codecov.png" alt="rtemplate_codecov"></a></p>
 <p><br><br></p>
 <p>The final step is to add your badges to your repository as follows. Simply replace “rtemplate” with your own repo name in the following three badges and then paste these at the top of the README.md file and push:</p>
 <pre><code>[![build](https://github.com/JGCRI/rtemplate/actions/workflows/build.yml/badge.svg)](https://github.com/JGCRI/rtemplate/actions/workflows/build.yml)
