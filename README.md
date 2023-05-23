@@ -13,7 +13,7 @@
 <br>
 <br>
 
-[![rtemplate_build_your_own_package](https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png)](https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png)
+[![rtemplate_build_your_own_package](vignettes/vignetteFigs/rtemplate_build_your_own_package.png)](https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png)
 
 <br>
 <br>
@@ -23,7 +23,7 @@ The folder structure is as shown below:
 <br>
 <br>
 
-[![rtemplate_package_structure](https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_package_structure.png)](https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_package_structure.png)
+[![rtemplate_package_structure](vignettes/vignetteFigs/rtemplate_package_structure.png)](https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_package_structure.png)
 
 <br>
 <br>
@@ -78,7 +78,7 @@ Once your GitHub action for docs is complete (see section 6 GitHub Actions) you 
 <br>
 <br>
 
-[![rtemplate_package_structure](https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_activate_docs.png)](https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_activate_docs.png)
+[![rtemplate_package_structure](vignettes/vignetteFigs/rtemplate_activate_docs.png)](https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_activate_docs.png)
 
 <br>
 <br>
@@ -94,7 +94,7 @@ The final piece is to check your GitHub actions for continuous integration. Thes
 <br>
 <br>
 
-[![rtemplate_codecov](https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_codecov.png)](https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_codecov.png)
+[![rtemplate_codecov](vignettes/vignetteFigs/rtemplate_codecov.png)](https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_codecov.png)
 
 <br>
 <br>
