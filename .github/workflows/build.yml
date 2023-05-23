@@ -8,19 +8,19 @@ on:
 
 jobs:
   build:
-    runs-on: ${{ matrix.config.os }}
-    name: ${{ matrix.config.os }} (${{ matrix.config.r }})
+    runs-on: ${{ matrix.os }}
+    name: ${{ matrix.os }} (${{ matrix.r }})
     
     strategy:
       fail-fast: false
       matrix:
         config:
-        os:
-          - windows-latest
-          - macos-latest
-          - ubuntu-latest
-        r:
-          - 'devel'
+            os:
+              - windows-latest
+              - macos-latest
+              - ubuntu-latest
+            r:
+              - 'devel'
     
     env:
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: true      
@@ -43,14 +43,14 @@ jobs:
           restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1- 
       
       - name: Ubuntu config
-        if: startsWith(matrix.config.os, 'ubuntu')
+        if: startsWith(matrix.os, 'ubuntu')
         run: |
           sudo add-apt-repository ppa:ubuntugis/ppa
           sudo apt-get update
           sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev libudunits2-dev libgdal-dev libgeos-dev libproj-dev libavfilter-dev  libmagick++-dev
       
       - name: MacOS Config
-        if: startsWith(matrix.config.os, 'macOS')
+        if: startsWith(matrix.os, 'macOS')
         run: |
             brew install pkg-config
             brew install gdal
