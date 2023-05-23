@@ -13,7 +13,7 @@
 <br>
 <br>
 
-<a href="https://raw.githubusercontent.com/JGCRI/rtemplate/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png?raw=true" target="_blank"><img src="https://raw.githubusercontent.com/JGCRI/rtemplate/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png?raw=true" max-width="80%"/></a>
+<a href="https://raw.githubusercontent.com/JGCRI/rtemplate/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png?raw=true" onclick="window.open(this.href); return false;"><img src="https://raw.githubusercontent.com/JGCRI/rtemplate/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png?raw=true" max-width="80%"/></a>
 
 <br>
 <br>
@@ -23,7 +23,7 @@ The folder structure is as shown below:
 <br>
 <br>
 
-<a href="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_package_structure.png?raw=true" target="_blank"><img src="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_package_structure.png?raw=true" max-width="80%"/></a>
+<a href="https://raw.githubusercontent.com/JGCRI/rtemplate/main/vignettes/vignetteFigs/rtemplate_package_structure.png?raw=true" onclick="window.open(this.href); return false;"><img src="https://raw.githubusercontent.com/JGCRI/rtemplate/main/vignettes/vignetteFigs/rtemplate_package_structure.png?raw=true" max-width="80%"/></a>
 
 <br>
 <br>
@@ -78,7 +78,7 @@ Once your GitHub action for docs is complete (see section 6 GitHub Actions) you 
 <br>
 <br>
 
-<a href="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_activate_docs.png?raw=true" target="_blank"><img src="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_activate_docs.png?raw=true" max-width="80%"/></a>
+<a href="https://raw.githubusercontent.com/JGCRI/rtemplate/main/vignettes/vignetteFigs/rtemplate_activate_docs.png?raw=true" onclick="window.open(this.href); return false;"><img src="https://raw.githubusercontent.com/JGCRI/rtemplate/main/vignettes/vignetteFigs/rtemplate_activate_docs.png?raw=true" max-width="80%"/></a>
 
 <br>
 <br>
@@ -94,7 +94,7 @@ The final piece is to check your GitHub actions for continuous integration. Thes
 <br>
 <br>
 
-<a href="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_codecov.png?raw=true" target="_blank"><img src="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_codecov.png?raw=true" max-width="80%"/></a>
+<a href="https://raw.githubusercontent.com/JGCRI/rtemplate/main/vignettes/vignetteFigs/rtemplate_codecov.png?raw=true" onclick="window.open(this.href); return false;"><img src="https://raw.githubusercontent.com/JGCRI/rtemplate/main/vignettes/vignetteFigs/rtemplate_codecov.png?raw=true" max-width="80%"/></a>
 
 <br>
 <br>
