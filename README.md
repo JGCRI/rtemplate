@@ -13,7 +13,7 @@
 <br>
 <br>
 
-<a href="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png?raw=true" target="_blank"><img src="https://github.com/JGCRI/rtemplate/tree/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png?raw=true" max-width="80%"/></a>
+<a href="https://raw.githubusercontent.com/JGCRI/rtemplate/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png?raw=true" target="_blank"><img src="https://raw.githubusercontent.com/JGCRI/rtemplate/main/vignettes/vignetteFigs/rtemplate_build_your_own_package.png?raw=true" max-width="80%"/></a>
 
 <br>
 <br>
